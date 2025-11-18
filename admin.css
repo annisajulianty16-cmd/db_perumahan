@@ -1,0 +1,106 @@
+/* ============================
+   ADMIN.CSS
+   Tema : Dashboard Admin - InfoPerumahan
+   ============================ */
+
+:root {
+  --primary: #0a1b3c;
+  --accent: #f1c40f;
+  --bg: #eef2f7;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #333;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 15px 20px;
+}
+.navbar h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ========== CARD & TABLE ========== */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.table th {
+  background: var(--primary);
+  color: #fff;
+}
+.table td {
+  vertical-align: middle;
+}
+.btn-dark {
+  background: var(--primary);
+  border: none;
+}
+.btn-dark:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* ========== FORM ========== */
+.form-control {
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(241,196,15,0.25);
+}
+
+/* ========== DASHBOARD LAYOUT ========== */
+.sidebar {
+  width: 250px;
+  background: var(--primary);
+  color: white;
+  min-height: 100vh;
+  position: fixed;
+  padding: 20px;
+}
+.sidebar a {
+  color: #fff;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.sidebar a:hover, .sidebar a.active {
+  background: var(--accent);
+  color: #000;
+}
+.content {
+  margin-left: 270px;
+  padding: 40px;
+}
+
+/* ========== BUTTON ========== */
+.btn-accent {
+  background: var(--accent);
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+.btn-accent:hover {
+  background: #d4af37;
+}
